@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- 
+
     <meta property="og:title" content="Nina Carducci - Photographe">
     <meta property="og:description" content="Portfolio et services de Nina Carducci, photographe professionnelle spécialisée dans les portraits, mariages, et événements en Île-de-France.">
     <meta property="og:image" content="./assets/images/nina.png">
@@ -60,8 +60,13 @@
     </div>
 </div>
 <div id="about">
-    <div class="picture left">
-        <img src="./assets/images/nina.png" alt="Photo de Nina">
+	<div class="picture left">
+        <!-- Remplacement de l'image de Nina par une version WebP ou AVIF -->
+        <picture>
+            <source srcset="./assets/images/nina.webp" type="image/webp">
+            <source srcset="./assets/images/nina.jpg" type="image/jpeg">
+            <img src="./assets/images/nina.jpg" alt="Photo de Nina">
+        </picture>
     </div>
     <div id="about-me">
         <h3 class="about-me__title">À propos de moi</h3>
@@ -149,8 +154,13 @@
             </form>
         </div>
         <div class="picture right">
-            <img src="./assets/images/camera.png" alt="Appareil photo">
-        </div>
+			<!-- Remplacement de l'image de l'appareil photo par une version WebP ou JPEG -->
+			<picture>
+				
+				<source srcset="./assets/images/camera.webp" type="image/webp">
+				<img src="./assets/images/camera.png" alt="Appareil photo">
+			</picture>
+		</div>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
